@@ -1,16 +1,31 @@
-import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.png';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './nav.css'
 
-function Nav() {
+function Nav({logo, logoDescription}) {
+  //  emplacement courant : useLocation (react-router-dom)
+  const location = useLocation();
+
+  // gestion de l'état du lien actif
+  const [activeLink, setActiveLink] = useState('');
+
+/* qd la page change, useEffect est exécuté et met à jour l'état du lien actif 
+    (La dépendance [location] spécifie que le useEffect doit être déclenché chaque fois que la valeur de location change)*/ 
+ 
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
 		<div className='nav'>
       <div className='logoDiv'>
-        <img className='logo' src={logo} alt="logo Kasa"/>
+        <img className='logo' src={logo} alt={logoDescription}/>
       </div>
       <nav className='navbar'>
-        <Link className='navLi' to="/">Accueil</Link>
-        <Link className='navLi' to="/about">À propos</Link>        
+         {/*  <Link className={`navLi ${activeLink === '/' ? 'underlinedLink' : ''}`} to="/">Accueil</Link>
+         <Link className={`navLi ${activeLink === '/about' ? 'underlinedLink' : ''}`} to="/about">À propos</Link> */} 
+        <Link className={`navLi ${activeLink === '/' && 'underlinedLink'}`} to="/">Accueil</Link>
+        <Link className={`navLi ${activeLink === '/about' && 'underlinedLink'}`} to="/about">À propos</Link>
       </nav>
     </div>
   )
