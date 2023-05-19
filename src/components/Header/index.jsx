@@ -2,11 +2,11 @@ import './header.css'
 import Nav from '../Nav'
 import Banner from '../Banner'
 
-function Header() {
+function Header({bannerImg, bannerText, bannerDescription}) {
   return (
 	  <div className='header'>
       <Nav />
-      <Banner />
+      <Banner image={bannerImg} text={bannerText} description={bannerDescription}/>
     </div>   
   )
 }
