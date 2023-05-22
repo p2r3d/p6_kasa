@@ -1,3 +1,4 @@
+@import '../../style/index.scss';
 .nav {
   display: flex;
   flex-direction: row;
@@ -18,7 +19,7 @@
   gap: 3.1rem;
 }
 .navLi {
-  color: #FF6060;
+  color: $kasa-color;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.7rem;

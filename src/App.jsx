@@ -1,9 +1,9 @@
-// composant pour le routeur
+import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/about';
 import NotFound from './pages/notFound';
-
+ 
 
 function App() {
   return (
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default App 

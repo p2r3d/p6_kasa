@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './nav.css'
+import './nav.scss'
 
 function Nav({logo, logoDescription}) {
   //  emplacement courant : useLocation (react-router-dom)
