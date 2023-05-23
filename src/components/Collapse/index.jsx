@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './collapse.scss'
 
+
 function Collapse({AboutItemIndex, aboutItemTitle,aboutItemText,arrowD, arrowU}) {
 
   const [isOpen, setIsOpen] = useState(false)

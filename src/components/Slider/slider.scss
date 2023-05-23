@@ -1,0 +1,58 @@
+@import '../../style/index.scss';
+
+.carrouselSection {
+    height: 415px;   
+   
+    .picturesDiv {
+      position : relative;
+    }
+    .carrouselImg {
+      object-fit: cover;
+      border-radius: 25px;
+      height: 415px;
+      width: 100%;
+
+    }
+    .PArrow {
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      width : 46px;
+      height : 79px;
+    }
+    .PArrow:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    .PArrowNone {
+      display: none;
+    }
+    .NArrow {
+    width : 46px;
+    height : 79px;
+      position: absolute;
+      top: 40%;
+      right: 2%;
+    }
+    .NArrowNone {
+      display: none;
+    }
+    .NArrow:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    
+    .slider {
+      position: absolute;
+      bottom :5%;
+      right: 50%;
+      color : $title-color;
+      font-family: $font-family;
+      font-weight: $font-weight;  
+      font-size: $font-size;
+    }
+    .noSlider {
+      display: none;
+    }
+}
+

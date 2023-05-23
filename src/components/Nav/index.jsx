@@ -12,9 +12,7 @@ function Nav({logo, logoDescription}) {
 /* qd la page change, useEffect est exécuté et met à jour l'état du lien actif 
     (La dépendance [location] spécifie que le useEffect doit être déclenché chaque fois que la valeur de location change)*/ 
  
-  useEffect(() => {
-    setActiveLink(location.pathname);
-  }, [location]);
+  useEffect(() => { setActiveLink(location.pathname); }, [location]);
 
   return (
 		<div className='nav'>

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
+
 import datas from '../../datas/config'
-import './notFound.css'
+import './notFound.scss'
 
 function NotFound() {
   return (
@@ -23,7 +24,8 @@ function NotFound() {
       />
    </div>
   );
-}
+} 
  
 export default NotFound
 
+ 

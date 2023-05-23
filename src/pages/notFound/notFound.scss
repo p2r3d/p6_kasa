@@ -1,0 +1,30 @@
+@import '../../style/index.scss';
+
+.messages {
+  @include flex-center-between;
+  flex-direction: column;
+  justify-content: center;
+  color : #FF6060;
+  font-weight:500;
+  font-family: $font-family;
+   
+  .errorCode {
+    font-size: 263px;
+    font-weight:700;
+    margin:0;
+  }
+  .errorText {
+    font-size: 36px;
+    padding-bottom: 82px;
+  }
+}
+
+.backHome {
+  display: flex;
+  justify-content: center; 
+  font-size: 18px;
+  color : #FF6060;
+  font-weight: 500;
+  padding-bottom: 159px;
+  font-family: $font-family;
+}

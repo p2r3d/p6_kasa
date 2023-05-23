@@ -1,7 +1,7 @@
 import "./card.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types" //bibliothèque pour valider les types des props 
 import Housings from "../../datas/logements.json";
 
 function Card() {
