@@ -3,6 +3,8 @@
 .divContainer {
   padding:0;
   margin: 0;
+  font-family: $font-family;
+
   .itemContainer {
     display :flex;
     flex-direction: column;
@@ -13,44 +15,41 @@
         list-style-type: none;
         width:100%;
       }
+      .itemText {
+      padding: 36px 18px 19px 18px;
+      margin:0;
+      color: $kasa-color;
+      font-size: 24px;
+      font-weight: 400;
+      background-color: $background-text-color;
+      border-radius:  0  0 5px 5px;
+    }
   }
-}
-
-.closedCollapse {
-  @include flex-center-between;
-  justify-content: space-between;
-  margin:  30px auto;
-  width : 80%;
   
-}
-.itemTitle {
-  @include flex-center-between;
-  height :47px;
-  background-color:$kasa-color;
-  border-radius: 5px 0 0 5px;
-  color: $title-color;
-  font-size: 24px;
-  font-family: $font-family;
-  font-weight: 500;
-  padding-left: 18px;
-  width:100%; 
-  margin: 0;
-}
-.itemText {
-  padding: 36px 18px 19px 18px;
-  margin:0;
-  color: $kasa-color;
-  font-size: 24px;
-  font-weight: 400;
-  background-color: $background-text-color;
-  border-radius:  0  0 5px 5px;
-}
-.arrow {
-  @include flex-center-between;
-  background-color: $kasa-color;
-  border-radius: 0 5px 5px 0;
-  color:$title-color;
-  height :47px;
-  border:0px;
-  padding-right: 10px;
+  .closedCollapse {
+    @include flex-center-between;
+    justify-content: space-between;
+    margin:  30px auto;
+    width : 80%;
+  }
+  .itemTitle {
+    @include flex-center-between;
+    height :47px;
+    background-color:$kasa-color;
+    border-radius: 5px 0 0 5px;
+    color: $title-color;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 18px;
+    width:100%; 
+    margin: 0;
+  }
+  .arrow {
+    background-color: $kasa-color;
+    border-radius: 0 5px 5px 0;
+    color:$title-color;
+    height :47px;
+    border:0px;
+    padding-right: 10px;
+  }
 }

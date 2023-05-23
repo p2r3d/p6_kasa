@@ -1,4 +1,4 @@
-import './header.css'
+import './header.scss'
 import Nav from '../Nav'
 import Banner from '../Banner'
 

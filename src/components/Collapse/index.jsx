@@ -17,9 +17,11 @@ function Collapse({AboutItemIndex, aboutItemTitle,aboutItemText,arrowD, arrowU})
     </ul>
   </div>
   ) : (
-  <div className='closedCollapse'>
-    <p className='itemTitle'>{aboutItemTitle}</p>
-    <button className='arrow' onClick={() => setIsOpen(true)}><img className="" src={arrowD} alt="" /></button>
+  <div className='divContainer'>
+    <div className='closedCollapse'>
+      <p className='itemTitle'>{aboutItemTitle}</p>
+      <button className='arrow' onClick={() => setIsOpen(true)}><img className="" src={arrowD} alt="" /></button>
+    </div>
   </div>
  ) 
 }

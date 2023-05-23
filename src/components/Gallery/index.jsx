@@ -1,4 +1,4 @@
-import "./gallery.css";
+import "./gallery.scss";
 import Card from '../../components/Card'
 
 
