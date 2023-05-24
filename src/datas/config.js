@@ -5,9 +5,6 @@ import logo from '../assets/logo.png';
 import homeBannerImg from '../assets/homeBanner.webp';
 import aboutBannerImg from '../assets/aboutBanner.webp';
 import logoFooter from '../assets/logoFooter.png';
-import DArrow from '../assets/DArrow.png';
-import UArrow from '../assets/UArrow.png';
-
 
 const datas = {
   //logo
@@ -24,8 +21,6 @@ const datas = {
   homeBannerImg : homeBannerImg,
   
   // page à propos 
-  arrowD : DArrow,
-  arrowU : UArrow,
   
   aboutBannerText : "",
   aboutBannerDescription : "Forêt de sapins ouvrant sur une magnifique vallée au pied de montagnes enneigées",

@@ -1,0 +1,82 @@
+@import '../../style/index.scss';
+
+.housingSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    .titlesDiv {
+      display :flex;
+      flex-direction: column;
+      font-family:$font-family;
+      font-weight:$font-weight;
+      color : $kasa-color;
+
+      .title {
+        font-size: 36px;
+        margin: 0;
+      }
+      .description {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+    .tagsDiv {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap : 10px;
+      padding-top: 20px;
+
+      .tagBtn {
+        width : 115px;
+        height : 25px;
+        border-radius: 10px;
+        border:0;
+        background-color: $kasa-color;
+        color: $background-text-color;
+        font-family:$font-family;
+        font-weight:$font-weight;
+      }
+    }
+    
+  } 
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    .housingHostDiv {
+      display: flex;
+      gap : 10px;
+      font-family:$font-family;
+      font-weight:$font-weight;
+      color : $kasa-color;
+
+      img {
+        border-radius: 50%;
+        width : 64px;
+        height: 64px;
+      }
+      p {
+        width : 104px;
+        text-align: right;
+      }
+
+    }
+
+    .ratingDiv {
+      height : 25px;
+      border-radius: 10px;
+      border:0;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 27px;
+    }
+  }
+  
+
+}

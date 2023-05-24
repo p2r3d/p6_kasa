@@ -1,23 +1,31 @@
+import { useParams } from 'react-router-dom'
+
 import Slider from '../../components/Slider'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import Collapse from '../../components/Collapse'
-
+import HousingInfos from '../../components/HousingInfos'
 
 import housings from '../../datas/logements.json';
 import datas from '../../datas/config'
 
-import PArrow from "../../assets/PArrow.png";
-import NArrow from "../../assets/NArrow.png";
 
-function Housing(props) {
+
+function Housing() {
+
+  // récup de l'id passé en paramètre dans l'url
+  const {id}=useParams();
+   // récup du logement associé cet id
+  const selectedHousing = housings.find((housing) => housing.id === id);
+  
   return (
     <div>
       <Nav        
         logo={datas.logoKasa} 
         logoDescription={datas.logoDescription}
       />      
-      <Slider slides={housings} PArrow={PArrow}  NArrow={NArrow}/>
+      <Slider selHousing={selectedHousing}/>
+      <HousingInfos selHousing={selectedHousing}/>
       <Collapse
         arrowD={datas.arrowD}
         arrowU={datas.arrowU}
@@ -31,4 +39,4 @@ function Housing(props) {
   );
 }
 
-export default Housing;
+export default Housing
