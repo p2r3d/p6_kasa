@@ -4,26 +4,38 @@ import DArrow from '../../assets/DArrow.png';
 import UArrow from '../../assets/UArrow.png';
 
 
-function Collapse({AboutItemIndex, aboutItemTitle,aboutItemText,arrowD, arrowU}) {
+function Collapse({itemIndex, itemTitle,itemText, fontSize}) {
 
   const [isOpen, setIsOpen] = useState(false)
   return isOpen ? (
   <div>
     <ul className='divContainer'>       
-      <li className='itemContainer' key={AboutItemIndex}>
-        <div className='openedCollapse'>
-          <p className='itemTitle'>{aboutItemTitle}</p>
-          <button className='arrow' onClick={() => setIsOpen(false)}><img className="" src={UArrow} alt="" /></button>
+      <li className='itemContainer'  style={{ fontSize: fontSize }}>
+        <div className='openedCollapse' >
+          <p className='itemTitle'>{itemTitle}</p>
+          <button className='arrow' onClick={() => setIsOpen(false)}>
+            <img className="" src={UArrow} alt="flêche vers le haut" />
+          </button>
         </div>
-        <p className='itemText'>{aboutItemText}</p>
+        {/* si le texte est un tableau alors affichage de la liste */}
+        {Array.isArray(itemText)  ? (
+          <ul className="itemText">
+            {itemText.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : ( <p className='itemText'>{itemText}</p>)}
+        
       </li>
     </ul>
   </div>
   ) : (
-  <div className='divContainer'>
+  <div className='divContainer'  style={{ fontSize: fontSize }}>
     <div className='closedCollapse'>
-      <p className='itemTitle'>{aboutItemTitle}</p>
-      <button className='arrow' onClick={() => setIsOpen(true)}><img className="" src={DArrow} alt="" /></button>
+      <p className='itemTitle'>{itemTitle}</p>
+      <button className='arrow' onClick={() => setIsOpen(true)}>
+        <img className="" src={DArrow} alt="flêche vers le bas" />
+      </button>
     </div>
   </div>
  ) 

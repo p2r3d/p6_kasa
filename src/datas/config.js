@@ -21,8 +21,7 @@ const datas = {
   homeBannerImg : homeBannerImg,
   
   // page à propos 
-  
-  aboutBannerText : "",
+    aboutBannerText : "",
   aboutBannerDescription : "Forêt de sapins ouvrant sur une magnifique vallée au pied de montagnes enneigées",
   aboutBannerImg : aboutBannerImg,
   aboutDatas : [
@@ -47,7 +46,12 @@ const datas = {
   // page not found
   notFoundCode : "404",
   notFoundText : "Oups ! La page que vous demandez n'existe pas.",
-  backHomeLink : "Retour vers la page d'accueil"
+  backHomeLink : "Retour vers la page d'accueil",
+
+  // page logement
+  housingDescriptionCollapseTitle : "Description",
+  housingEquipmentsCollapseTitle : "Équipements"
+
 };
 
 export default datas;

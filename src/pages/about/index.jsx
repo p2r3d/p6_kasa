@@ -2,11 +2,13 @@ import Header from '../../components/Header'
 import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
 import datas from '../../datas/config';
+import  './about.scss';
+
 
 function About() {
-
+  const fontSize = '24px';
   return (
-    <div>
+    <div className='aboutDiv'>
       <Header        
         logo={datas.logoKasa} 
         logoDescription={datas.logoDescription}
@@ -14,15 +16,16 @@ function About() {
         bannerText={datas.aboutBannerText} 
         bannerDescription={datas.aboutBannerDescription}
       />
-      {datas.aboutDatas.map((item, index) => (
-        <Collapse
-          key={index}
-          aboutItemTitle={item.aboutItemTitle}
-          aboutItemText={item.aboutItemText}
-          arrowD={datas.arrowD}
-          arrowU={datas.arrowU}
-        />
+      <div className='collapsesDiv'>
+        {datas.aboutDatas.map((item, index) => (
+          <Collapse
+            key={index}
+            itemTitle={item.aboutItemTitle}
+            itemText={item.aboutItemText}
+            fontSize={fontSize}
+          />
       ))}
+      </div>
       <Footer 
         logo={datas.logoFooterKasa} 
         logoDescription={datas.logoDescription}
@@ -32,4 +35,4 @@ function About() {
   )
 }
 
-export default About;
+export default About

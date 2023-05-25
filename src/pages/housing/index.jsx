@@ -26,10 +26,6 @@ function Housing() {
       />      
       <Slider selHousing={selectedHousing}/>
       <HousingInfos selHousing={selectedHousing}/>
-      <Collapse
-        arrowD={datas.arrowD}
-        arrowU={datas.arrowU}
-      />
       <Footer 
         logo={datas.logoFooterKasa} 
         logoDescription={datas.logoDescription}
