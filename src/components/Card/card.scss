@@ -1,8 +1,9 @@
-@import '../../style/index.scss';
+@import '../../style/variables';
+@import '../../style/mixins';
+@import '../../style/placeholders';
 
 .cardContainer {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
   gap :3rem ;
   flex-wrap: wrap;
   margin: 3rem;
@@ -28,9 +29,7 @@
       width: 90%;
       height: 52px;
       padding-left: 1rem;
-      font-weight: 500;
-      color: $title-color;
-      font-family: $font-family;
+      color:$title-color;
     }
   }
   .cardFigure::before {
@@ -46,8 +45,3 @@
     box-shadow: rgb(100, 100, 100) 0 0 20px 1px;
   }
 }
-
-
-
-
-

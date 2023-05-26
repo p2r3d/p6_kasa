@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+.nav .logoDiv {
+  height: 70px;
+}
+.nav .logoDiv .logo {
+  height: 62px;
+}
+.nav .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.1rem;
+}
+.nav .navbar .navLi {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #FF6060;
+  font-weight: 500;
+}
+.nav .navbar .underlinedLink {
+  text-decoration-line: underline;
+}/*# sourceMappingURL=nav.css.map */

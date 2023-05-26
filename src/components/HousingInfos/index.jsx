@@ -1,6 +1,5 @@
 import "./housingInfos.scss";
-import GreyStar from '../../assets/GreyStar.png'
-import RedStar from '../../assets/RedStar.png'
+import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
 import datas from '../../datas/config.js'
 
@@ -29,14 +28,8 @@ const fontSize = "18px";
             alt="propriétaire du logement"
           />
         </div>
-        <div className="ratingDiv"> 
-          {[...Array(5)].map((_, index) => (
-            <img
-              key={index}
-              src={index < selHousing.rating ? RedStar : GreyStar}
-              alt=""
-            />
-          ))}
+        <div className="ratingDiv">
+          <Rating selHousing={selHousing} />
         </div>
       </div>     
      </div> 

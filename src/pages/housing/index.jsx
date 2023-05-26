@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import Slider from '../../components/Slider'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Collapse from '../../components/Collapse'
 import HousingInfos from '../../components/HousingInfos'
 
 import housings from '../../datas/logements.json';

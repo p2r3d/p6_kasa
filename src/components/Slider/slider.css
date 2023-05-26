@@ -1,0 +1,50 @@
+.carrouselSection {
+  height: 415px;
+}
+.carrouselSection .picturesDiv {
+  position: relative;
+}
+.carrouselSection .carrouselImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  height: 415px;
+  width: 100%;
+}
+.carrouselSection .PArrow {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  width: 46px;
+  height: 79px;
+}
+.carrouselSection .PArrow:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.carrouselSection .PArrowNone {
+  display: none;
+}
+.carrouselSection .NArrow {
+  width: 46px;
+  height: 79px;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+.carrouselSection .NArrowNone {
+  display: none;
+}
+.carrouselSection .NArrow:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.carrouselSection .slider {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  color: #FFFFFF;
+}
+.carrouselSection .noSlider {
+  display: none;
+}/*# sourceMappingURL=slider.css.map */

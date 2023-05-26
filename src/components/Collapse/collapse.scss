@@ -1,52 +1,45 @@
-@import '../../style/index.scss';
+@import '../../style/variables';
+@import '../../style/placeholders';
 
-.divContainer {
-  padding:0;
-  margin: 0;
-  font-family: $font-family;
-
-  .itemContainer {
-    display :flex;
-    flex-direction: column;
-    
-    margin: 30px auto;
-      .openedCollapse {
-        @include flex-center-between;
-        list-style-type: none;
-      }
-      .itemText {
-      padding: 36px 18px 19px 18px;
-      margin:0;
-      color: $kasa-color;
-      font-weight: 400;
-      background-color: $background-text-color;
-      border-radius:  0  0 5px 5px;
-      list-style-type: none;
-    }
-  }
-  
-  .closedCollapse {
-    @include flex-center-between;
-    justify-content: space-between;
-    margin:  30px auto;
-  }
-  .itemTitle {
-    @include flex-center-between;
-    height :47px;
-    background-color:$kasa-color;
-    border-radius: 5px 0 0 5px;
-    color: $title-color;
-    font-weight: 500;
-    padding-left: 18px;
-    width:100%; 
-    margin: 0;
-  }
-  .arrow {
-    background-color: $kasa-color;
-    border-radius: 0 5px 5px 0;
-    color:$title-color;
-    height :47px;
-    border:0px;
-    padding-right: 10px;
+.openedCollapse {
+  display:flex;
+  flex-direction: column;  border-radius: 5px;
+  background-color: $kasa-color; 
+  .itemText {
+    padding: 36px 18px 19px 18px;
+    margin:0;
+    background-color: $background-text-color;
+    font-size:24px ;
+    color:$kasa-color;
+    font-weight: 400;
   }
 }
+.closedCollapse {
+  @extend %flex-center-between;
+  justify-content: space-between;
+  color: $title-color;
+  background-color: $kasa-color;
+  border-radius: $border-radius;
+}
+
+li {
+  list-style-type: none;  
+}
+
+.itemTitle {
+  @extend %flex-center-between;
+  font-size:24px ;
+  height :47px;
+  padding-left: 18px;
+  width:100%; 
+  margin: 0;
+  color: $title-color;
+}
+.arrow {
+  border-radius:$border-radius;
+  border:0px;
+  padding-right: 10px;
+  background-color: $kasa-color;
+}
+  
+

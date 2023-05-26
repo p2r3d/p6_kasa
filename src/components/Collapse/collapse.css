@@ -1,0 +1,47 @@
+.itemTitle, .closedCollapse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.openedCollapse {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #FF6060;
+}
+.openedCollapse .itemText {
+  padding: 36px 18px 19px 18px;
+  margin: 0;
+  background-color: #F6F6F6;
+  font-size: 24px;
+  color: #FF6060;
+  font-weight: 400;
+}
+
+.closedCollapse {
+  justify-content: space-between;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.itemTitle {
+  font-size: 24px;
+  height: 47px;
+  padding-left: 18px;
+  width: 100%;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.arrow {
+  border-radius: 5px;
+  border: 0px;
+  padding-right: 10px;
+  background-color: #FF6060;
+}/*# sourceMappingURL=collapse.css.map */

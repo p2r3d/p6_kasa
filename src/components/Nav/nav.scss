@@ -1,7 +1,8 @@
-@import '../../style/index.scss';
+@import '../../style/placeholders';
+@import '../../style/variables';
+
 .nav {
-  @include flex-center-between;
-  font-family: $font-family;
+  @extend %flex-center-between;
   flex-wrap: wrap;
   padding-bottom: 4rem;
   
@@ -17,11 +18,11 @@
   flex-wrap: wrap;
   gap: 3.1rem;
   
-    .navLi {
-      color: $kasa-color;
+    .navLi {   
       text-decoration: none;
-      font-weight: 500;
       font-size: 1.7rem;
+      color : $kasa-color;
+      font-weight: $font-weight;
     }
     .underlinedLink {
     text-decoration-line: underline;

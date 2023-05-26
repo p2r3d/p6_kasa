@@ -1,0 +1,69 @@
+.housingSection .up {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  color: #FF6060;
+}
+.housingSection .up .left .titlesDiv .title {
+  font-size: 2rem;
+  margin: 0;
+}
+.housingSection .up .left .titlesDiv .description {
+  font-size: 1rem;
+  margin: 0;
+}
+.housingSection .up .left .tagsDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+}
+.housingSection .up .left .tagsDiv .tagBtn {
+  background-color: #FF6060;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: 500;
+  min-width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 10px;
+}
+.housingSection .up .right {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.housingSection .up .right .housingHostDiv {
+  display: flex;
+  gap: 10px;
+}
+.housingSection .up .right .housingHostDiv img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.housingSection .up .right .housingHostDiv p {
+  width: 104px;
+  text-align: right;
+}
+.housingSection .up .right .housingHostDiv .ratingDiv {
+  height: 1rem;
+}
+.housingSection .collapsesDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 76px;
+}
+.housingSection .collapsesDiv .descriptionCollapseDiv {
+  width: 100%;
+}
+.housingSection .collapsesDiv .equipCollapseDiv {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}/*# sourceMappingURL=housingInfos.css.map */

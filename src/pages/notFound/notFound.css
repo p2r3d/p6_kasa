@@ -1,0 +1,31 @@
+.messages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages {
+  flex-direction: column;
+  justify-content: center;
+  color: #FF6060;
+}
+.messages .errorCode {
+  font-size: 263px;
+  font-weight: 700;
+  margin: 0;
+}
+.messages .errorText {
+  font-size: 2rem;
+  padding-bottom: 82px;
+}
+
+.backHome {
+  color: #FF6060;
+  padding-bottom: 159px;
+}/*# sourceMappingURL=notFound.css.map */
