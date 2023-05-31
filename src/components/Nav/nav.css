@@ -40,16 +40,23 @@
 
 /************* Mobile *******************/
 @media (max-width: 700px) {
+  .nav {
+    align-items: center;
+  }
   .nav .logoDiv .logo {
     height: 45px;
   }
   .nav .navbar {
-    gap: 10px;
+    gap: 15px;
   }
   .nav .navbar .navLi {
-    font-size: 1rem;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   .nav .navbar .underlinedLink {
     text-decoration-line: underline;
+  }
+  .navHome, .navAbout {
+    padding-bottom: 16px;
   }
 }/*# sourceMappingURL=nav.css.map */

@@ -3,3 +3,9 @@
   flex-direction: column;
   padding-bottom: 43px;
 }
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .header {
+  padding-bottom: 0;
+  }
+}

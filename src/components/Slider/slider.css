@@ -13,31 +13,24 @@
 }
 .carrouselSection .PArrow {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 2%;
   width: 46px;
   height: 79px;
 }
-.carrouselSection .PArrow:hover {
+.carrouselSection .PArrow:hover, .carrouselSection .NArrow:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.carrouselSection .PArrowNone {
+.carrouselSection .PArrowNone, .carrouselSection .NArrowNone, .carrouselSection .noSlider {
   display: none;
 }
 .carrouselSection .NArrow {
   width: 46px;
   height: 79px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 2%;
-}
-.carrouselSection .NArrowNone {
-  display: none;
-}
-.carrouselSection .NArrow:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 .carrouselSection .slider {
   position: absolute;
@@ -45,6 +38,21 @@
   right: 50%;
   color: #FFFFFF;
 }
-.carrouselSection .noSlider {
-  display: none;
+
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .carrouselSection {
+    height: 255px;
+  }
+  .carrouselSection .carrouselImg {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .carrouselSection .PArrow, .carrouselSection .NArrow {
+    width: 15px;
+    height: 20px;
+  }
+  .NArrowNone, .slider {
+    display: none;
+  }
 }/*# sourceMappingURL=slider.css.map */

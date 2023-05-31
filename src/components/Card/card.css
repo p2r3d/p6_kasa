@@ -46,4 +46,32 @@
 .cardContainer .cardFigure:hover {
   transition: 0.5s;
   box-shadow: rgb(100, 100, 100) 0 0 20px 1px;
+}
+
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .cardContainer {
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 3rem;
+  }
+  .cardContainer .cardFigure {
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .cardContainer .cardFigure .cardImg {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cardContainer .cardFigure .cardTitle {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 90%;
+    height: 52px;
+    padding-left: 1rem;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=card.css.map */

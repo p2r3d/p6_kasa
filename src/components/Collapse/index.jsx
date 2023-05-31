@@ -13,8 +13,8 @@ function Collapse({itemTitle,itemText, fontSize}) {
         <div className='openedCollapse' >
           <div className='itemTitle'>
             <p className=''>{itemTitle}</p>
-            <button className='arrow' onClick={() => setIsOpen(false)}>
-              <img className="" src={UArrow} alt="flêche vers le haut" />
+            <button className='arrowBtn' onClick={() => setIsOpen(false)}>
+              <img className="arrowImg" src={UArrow} alt="flêche vers le haut" />
             </button>
           </div>
           {/* si le texte est un tableau alors affichage de la liste */}
@@ -35,8 +35,8 @@ function Collapse({itemTitle,itemText, fontSize}) {
       <li  style={{ fontSize: fontSize }}>
         <div className='closedCollapse' >
           <p className='itemTitle'>{itemTitle}</p>
-          <button className='arrow' onClick={() => setIsOpen(true)}>
-            <img className="" src={DArrow} alt="flêche vers le bas" />
+          <button className='arrowBtn' onClick={() => setIsOpen(true)}>
+            <img className="arrowImg" src={DArrow} alt="flêche vers le bas" />
           </button>
         </div>      
       </li>

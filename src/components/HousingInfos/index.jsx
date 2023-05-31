@@ -29,7 +29,8 @@ const fontSize = "18px";
           />
         </div>
         <div className="ratingDiv">
-          <Rating selHousing={selHousing} />
+          <Rating 
+          selHousing={selHousing} />
         </div>
       </div>     
      </div> 

@@ -5,21 +5,17 @@
   @extend %flex-center-between;
   flex-wrap: wrap;
   padding-bottom : 25px;
-
-  
   .logoDiv {
     display: flex;
-    font-size: 62px;
-    
+    font-size: 62px;   
     .logo {
       height: 60px;
     }
   }
   .navbar {
-  display:flex;
-  flex-wrap: wrap;
-  gap: 3.1rem;
-  
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3.1rem;
     .navLi {   
       text-decoration: none;
       font-size: 1.7rem;
@@ -42,19 +38,24 @@
 /************* Mobile *******************/
 @media (max-width: 700px){
   .nav {
+    align-items: center;
     .logoDiv { 
       .logo {
         height: 45px;
       }
     }
     .navbar {
-      gap: 10px;
+      gap: 15px;
       .navLi {   
-        font-size: 1rem;
+        font-size: 12px;
+        text-transform: uppercase;
       }
       .underlinedLink {
-      text-decoration-line: underline;
+        text-decoration-line: underline;
       }
     } 
+  }
+  .navHome, .navAbout {
+    padding-bottom : 16px;
   }
 }

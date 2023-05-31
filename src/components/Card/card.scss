@@ -45,3 +45,30 @@
     box-shadow: rgb(100, 100, 100) 0 0 20px 1px;
   }
 }
+/************* Mobile *******************/
+@media (max-width: 700px){
+ .cardContainer {
+  @extend %flex-center;
+  gap :3rem ;
+  flex-wrap: wrap;
+  margin: 3rem;
+  .cardFigure {
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    .cardImg {
+      width:100%;     
+      object-fit: cover;
+    }
+    .cardTitle {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 90%;
+      height: 52px;
+      padding-left: 1rem;
+      color:$title-color;
+    }
+  }
+ }
+}

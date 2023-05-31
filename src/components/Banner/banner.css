@@ -1,17 +1,17 @@
-.banner {
+.banner, .homeBanner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner {
+.banner, .homeBanner {
   flex-wrap: wrap;
   width: 100%;
   height: 223px;
   border-radius: 25px;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
-.banner .bannerImg {
+.banner .bannerImg, .homeBanner .bannerImg {
   width: 100%;
   height: 100%;
   border-radius: 25px;
@@ -19,10 +19,9 @@
      object-fit: cover;
   mix-blend-mode: darken;
 }
-.banner .bannerTitle {
+.banner .bannerTitle, .homeBanner .bannerTitle {
   color: #FFFFFF;
   font-weight: 500;
-  font-size: 48px;
   position: absolute;
   z-index: 1;
   font-size: 3rem;
@@ -30,4 +29,25 @@
 }
 
 /********** Tablette **********/
-/************* Mobile *******************//*# sourceMappingURL=banner.css.map */
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .banner {
+    flex-wrap: wrap;
+    height: 111px;
+    border-radius: 25px;
+  }
+  .banner .bannerImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    mix-blend-mode: darken;
+  }
+  .banner .bannerTitle {
+    display: none;
+  }
+  .aboutBanner {
+    height: 250px;
+  }
+}/*# sourceMappingURL=banner.css.map */

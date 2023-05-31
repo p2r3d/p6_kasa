@@ -18,3 +18,12 @@
   } 
 }
 
+/************* Mobile *******************/
+@media (max-width: 700px){
+  .footer {
+    .footerImg, .footerTitle{
+      color: $title-color;
+      font-size: 12px;
+    } 
+  }
+}

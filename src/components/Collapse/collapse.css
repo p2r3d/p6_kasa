@@ -34,7 +34,7 @@
   margin: 0;
   color: #FFFFFF;
 }
-.collapseSection .arrow {
+.collapseSection .arrowBtn {
   border-radius: 5px;
   border: 0px;
   padding-right: 10px;
@@ -46,4 +46,46 @@
 }
 .collapseSection ul li {
   list-style-type: none;
+}
+
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .collapseSection .closedCollapse {
+    color: #FFFFFF;
+    background-color: #FF6060;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .collapseSection .openedCollapse {
+    border-radius: 5px;
+    background-color: #FF6060;
+    padding: 0;
+    width: 100%;
+  }
+  .collapseSection .openedCollapse .itemText {
+    padding: 20px 18px 19px 18px;
+    margin: 0;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .collapseSection .itemTitle {
+    height: 30px;
+    padding-left: 18px;
+    width: 100%;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+  .collapseSection .arrowBtn {
+    border-radius: 5px;
+    border: 0px;
+    padding-right: 10px;
+    background-color: #FF6060;
+  }
+  .collapseSection .arrowImg {
+    width: 13px;
+    height: 8px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

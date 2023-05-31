@@ -1,5 +1,4 @@
 @import '../../style/variables';
-
 .carrouselSection {
     height: 415px;   
    
@@ -14,41 +13,46 @@
     }
     .PArrow {
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 2%;
       width : 46px;
       height : 79px;
     }
-    .PArrow:hover {
+    .PArrow:hover, .NArrow:hover{
       transform: scale(1.1);
       cursor: pointer;
     }
-    .PArrowNone {
+    .PArrowNone, .NArrowNone, .noSlider {
       display: none;
     }
     .NArrow {
     width : 46px;
     height : 79px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 2%;
     }
-    .NArrowNone {
-      display: none;
-    }
-    .NArrow:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-    }
-    
-    .slider {
+   .slider {
       position: absolute;
       bottom :5%;
       right: 50%;
       color:$title-color;
     }
-    .noSlider {
-      display: none;
-    }
+  }
+/************* Mobile *******************/
+@media (max-width: 700px){
+.carrouselSection {
+  height: 255px;   
+  .carrouselImg {
+    height: 255px;      
+    border-radius: 10px;
+  }
+  .PArrow, .NArrow {
+    width : 15px;
+    height : 20px;
+  }
 }
-
+  .NArrowNone, .slider {
+      display: none;
+  }
+}

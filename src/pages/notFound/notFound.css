@@ -29,4 +29,20 @@
 .backHome {
   color: #FF6060;
   padding-bottom: 159px;
+}
+
+/************* Mobile *******************/
+@media (max-width: 700px) {
+  .messages .errorCode {
+    font-size: 96px;
+  }
+  .messages .errorText {
+    margin: 0;
+    font-size: 1rem;
+    width: 75%;
+    padding-bottom: 133px;
+  }
+  .backHome {
+    padding-bottom: 109px;
+  }
 }/*# sourceMappingURL=notFound.css.map */
