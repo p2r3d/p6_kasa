@@ -4,6 +4,11 @@
   margin-top: 24px;
   color: #FF6060;
 }
+.housingSection .up .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .housingSection .up .left .titlesDiv .title {
   font-size: 2rem;
   margin: 0;
@@ -33,7 +38,7 @@
 .housingSection .up .right {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 20px;
 }
 .housingSection .up .right .housingHostDiv {
   display: flex;
@@ -45,7 +50,7 @@
   height: 64px;
 }
 .housingSection .up .right .housingHostDiv p {
-  width: 104px;
+  width: 84px;
   text-align: right;
 }
 .housingSection .up .right .housingHostDiv .ratingDiv {
@@ -59,6 +64,7 @@
 }
 .housingSection .collapsesDiv .descriptionCollapseDiv {
   width: 100%;
+  font-size: 18px;
 }
 .housingSection .collapsesDiv .equipCollapseDiv {
   width: 100%;

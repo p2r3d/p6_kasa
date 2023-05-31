@@ -9,8 +9,15 @@
 body {
   margin: auto;
   max-width: 1440px;
-  padding: 100px;
+  padding: $padding ;
   font-size : $font-size;
   font-family: $font-family;
   font-weight: $font-weight;
+}
+ 
+/************* Mobile *******************/
+@media (max-width: 700px){
+   body {
+    padding :20px;
+  }
 }

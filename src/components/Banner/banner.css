@@ -17,7 +17,6 @@
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.8;
   mix-blend-mode: darken;
 }
 .banner .bannerTitle {
@@ -28,4 +27,7 @@
   z-index: 1;
   font-size: 3rem;
   padding: 0 50px;
-}/*# sourceMappingURL=banner.css.map */
+}
+
+/********** Tablette **********/
+/************* Mobile *******************//*# sourceMappingURL=banner.css.map */

@@ -15,7 +15,6 @@
     @include full;
     border-radius: 25px;
     object-fit: cover;
-    opacity: 0.8;
     mix-blend-mode: darken;
   }
   .bannerTitle {
@@ -27,4 +26,13 @@
     font-size: 3rem;
     padding: 0 50px ;
   }
+}
+/********** Tablette **********/
+@media (max-width: 992px){
+  
+  }
+ 
+/************* Mobile *******************/
+@media (max-width: 768px){
+ 
 }

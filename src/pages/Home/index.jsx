@@ -21,7 +21,6 @@ function Home() {
         text={datas.footerText}
       />
     </div>
-   
   );
 }
 

@@ -15,13 +15,12 @@ function Nav({logo, logoDescription}) {
   useEffect(() => { setActiveLink(location.pathname); }, [location]);
 
   return (
-		<div className='nav'>
+    <div className={`nav ${activeLink === '/' && 'navHome'} ${activeLink === '/about' && 'navAbout'} ${activeLink.startsWith('/logement/') && 'navHousing'}`}>
       <div className='logoDiv'>
         <img className='logo' src={logo} alt={logoDescription}/>
       </div>
       <nav className='navbar'>
-         {/*  <Link className={`navLi ${activeLink === '/' ? 'underlinedLink' : ''}`} to="/">Accueil</Link>
-         <Link className={`navLi ${activeLink === '/about' ? 'underlinedLink' : ''}`} to="/about">À propos</Link> */} 
+        {/* le lien actif est souligné */} 
         <Link className={`navLi ${activeLink === '/' && 'underlinedLink'}`} to="/">Accueil</Link>
         <Link className={`navLi ${activeLink === '/about' && 'underlinedLink'}`} to="/about">À propos</Link>
       </nav>

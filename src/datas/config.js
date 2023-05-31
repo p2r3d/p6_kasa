@@ -13,7 +13,7 @@ const datas = {
   
   //footer
   logoFooterKasa : logoFooter,
-  footerText : "©2020 Kasa. All rights reserved",
+  footerText : "© 2020 Kasa. All rights reserved",
  
   // page d'accueil
   homeBannerText : "Chez vous, partout et ailleurs",

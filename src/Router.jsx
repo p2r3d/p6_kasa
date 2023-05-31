@@ -6,7 +6,7 @@ import Housing from './pages/housing';
 import NotFound from './pages/notFound';
  
 
-function App() {
+function Router() {
   return (
     <div>
       <Routes>
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App 
+export default Router 

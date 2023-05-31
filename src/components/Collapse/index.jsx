@@ -5,12 +5,11 @@ import UArrow from '../../assets/UArrow.png';
 
 
 function Collapse({itemTitle,itemText, fontSize}) {
-
   const [isOpen, setIsOpen] = useState(false)
   return isOpen ? (
-  <section>
+  <section className='collapseSection'>
     <ul>       
-      <li style={{ fontSize: fontSize }}>
+      <li style={{ fontSize: (parseInt(fontSize)) }}>
         <div className='openedCollapse' >
           <div className='itemTitle'>
             <p className=''>{itemTitle}</p>
@@ -31,7 +30,7 @@ function Collapse({itemTitle,itemText, fontSize}) {
     </ul>
   </section>
   ) : (
-  <section>
+  <section className='collapseSection'>
     <ul>       
       <li  style={{ fontSize: fontSize }}>
         <div className='closedCollapse' >

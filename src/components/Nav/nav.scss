@@ -4,13 +4,15 @@
 .nav {
   @extend %flex-center-between;
   flex-wrap: wrap;
-  padding-bottom: 4rem;
+  padding-bottom : 25px;
+
   
   .logoDiv {
-    height: 70px;
+    display: flex;
+    font-size: 62px;
     
     .logo {
-      height: 62px;
+      height: 60px;
     }
   }
   .navbar {
@@ -30,5 +32,29 @@
   } 
 }
 
+.navHome {
+  padding-bottom : 68px;
+}
+.navAbout {
+  padding-bottom : 50px;
+}
 
-
+/************* Mobile *******************/
+@media (max-width: 700px){
+  .nav {
+    .logoDiv { 
+      .logo {
+        height: 45px;
+      }
+    }
+    .navbar {
+      gap: 10px;
+      .navLi {   
+        font-size: 1rem;
+      }
+      .underlinedLink {
+      text-decoration-line: underline;
+      }
+    } 
+  }
+}

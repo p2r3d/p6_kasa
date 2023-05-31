@@ -1,47 +1,49 @@
-.itemTitle, .closedCollapse {
+.collapseSection .itemTitle, .collapseSection .closedCollapse {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.openedCollapse {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  background-color: #FF6060;
+.collapseSection {
+  margin-bottom: 31px;
 }
-.openedCollapse .itemText {
-  padding: 36px 18px 19px 18px;
-  margin: 0;
-  background-color: #F6F6F6;
-  font-size: 24px;
-  color: #FF6060;
-  font-weight: 400;
-}
-
-.closedCollapse {
+.collapseSection .closedCollapse {
   justify-content: space-between;
   color: #FFFFFF;
   background-color: #FF6060;
   border-radius: 5px;
+  width: 100%;
 }
-
-li {
-  list-style-type: none;
+.collapseSection .openedCollapse {
+  border-radius: 5px;
+  background-color: #FF6060;
+  padding: 0;
+  width: 100%;
 }
-
-.itemTitle {
-  font-size: 24px;
+.collapseSection .openedCollapse .itemText {
+  padding: 30px 18px 19px 18px;
+  margin: 0;
+  background-color: #F6F6F6;
+  color: #FF6060;
+  font-weight: 400;
+}
+.collapseSection .itemTitle {
   height: 47px;
   padding-left: 18px;
   width: 100%;
   margin: 0;
   color: #FFFFFF;
 }
-
-.arrow {
+.collapseSection .arrow {
   border-radius: 5px;
   border: 0px;
   padding-right: 10px;
   background-color: #FF6060;
+}
+.collapseSection ul {
+  padding: 0;
+  margin: 0;
+}
+.collapseSection ul li {
+  list-style-type: none;
 }/*# sourceMappingURL=collapse.css.map */
