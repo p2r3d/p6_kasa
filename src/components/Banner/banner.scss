@@ -7,8 +7,6 @@
   flex-wrap: wrap;
   width: 100%;
   object-fit: cover;
-    mix-blend-mode: darken;
-
   height: 223px;
   border-radius: 25px;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
@@ -21,27 +19,37 @@
     font-size: 3rem;
     padding: 0 50px ;
   }
+  img {
+    @include full;
+    border-radius: 25px;
+    object-fit: cover;
+    mix-blend-mode: darken;
+
+  }
 }
 
 /********** Tablette **********/
-@media (max-width: 992px) {
+@media screen and (min-width:769px) and (max-width: 1023px){
   .banner {
-    
+     margin-bottom: 30px; 
+    .aboutBanner {
+      height: 223px;
+    }
+    .bannerTitle {
+      font-size: 2rem;
+    }
   }
 }
  
-/************* Mobile *******************/
-@media (max-width: 700px) {
-.banner {
-  flex-wrap: wrap;
-  height: 111px;
-  border-radius: 10px;
-  .bannerTitle {
-    font-size: 24px;
+/************ Mobile **********/
+@media screen and (max-width: 768px) {
+  .aboutBanner {
+    height: 223px;
   }
-}
-
-.aboutBanner {
-  height: 250px;
-}
+  .homeBanner {
+    height: 111px;
+    .bannerTitle {
+      font-size: 24px;
+    }
+  } 
 }

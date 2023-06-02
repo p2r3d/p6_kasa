@@ -11,8 +11,8 @@ function Banner({image, text, description}) {
   (La dépendance [location] spécifie que le useEffect doit être déclenché chaque fois que la valeur de location change)*/ 
   useEffect(() => { setActiveLink(location.pathname); }, [location]);
   return (
-	  <div className='banner'>
-<img className={`banner ${activeLink === '/' ? 'homeBanner' : ''} ${activeLink === '/about' ? 'aboutBanner' : ''}`} src={image} alt={description} />
+	  <div className={`banner ${activeLink === '/' ? 'homeBanner' : ''} ${activeLink === '/about' ? 'aboutBanner' : ''}`}>
+      <img src={image} alt={description} />
       <h2 className="bannerTitle">{text}</h2>
     </div>   
   )

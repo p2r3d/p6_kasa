@@ -1,0 +1,48 @@
+ .banner {
+ 
+/************* Mobile *******************/
+@media (max-width: 700px)
+ 
+center
+ 
+* Ajout de la propriété object-position */
+ 
+  // récup de l'id passé en paramètre dans l'url
+  const {id}=useParams();
+   // récup du logement associé cet id
+  const selectedHousing = slides.find((housing) => housing.id === id);*/
+ 
+    padding-bottom: 50px;
+
+ 
+between
+ 
+direction
+ 
+uppercase
+ 
+nav {
+    .logoDiv { 
+      .logo {
+        height: 45px;
+      }
+    }
+    .navbar {
+      gap: 10px;
+      .navLi {   
+        font-size: 1rem;
+      }
+      .underlinedLink {
+      text-decoration-line: underline;
+      }
+    } 
+  }
+ 
+0
+ 
+=== 
+ 
+&& 'underlinedLink'
+ 
+defaultHeader
+ 

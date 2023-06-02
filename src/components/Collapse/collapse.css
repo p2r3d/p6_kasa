@@ -49,7 +49,7 @@
 }
 
 /************* Mobile *******************/
-@media (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .collapseSection .closedCollapse {
     color: #FFFFFF;
     background-color: #FF6060;

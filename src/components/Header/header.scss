@@ -3,9 +3,17 @@
   flex-direction: column;
   padding-bottom: 43px;
 }
-/************* Mobile *******************/
-@media (max-width: 700px) {
+/********** Tablette **********/
+@media screen and (min-width:769px) and (max-width: 1023px) {
   .header {
   padding-bottom: 0;
   }
 }
+  
+  /************* Mobile *******************/
+@media screen and (max-width: 768px) {
+  .header {
+  padding-bottom: 0;
+  }
+}
+

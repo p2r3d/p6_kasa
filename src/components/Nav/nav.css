@@ -39,8 +39,30 @@
   padding-bottom: 50px;
 }
 
+/********** Tablette **********/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .nav {
+    align-items: center;
+  }
+  .nav .logoDiv .logo {
+    height: 45px;
+  }
+  .nav .navbar {
+    gap: 15px;
+  }
+  .nav .navbar .navLi {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .nav .navbar .underlinedLink {
+    text-decoration-line: underline;
+  }
+  .navHome, .navAbout {
+    padding-bottom: 16px;
+  }
+}
 /************* Mobile *******************/
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .nav {
     align-items: center;
   }
