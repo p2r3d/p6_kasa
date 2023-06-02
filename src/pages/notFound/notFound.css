@@ -24,6 +24,7 @@
 .messages .errorText {
   font-size: 2rem;
   padding-bottom: 82px;
+  text-align: center;
 }
 
 .backHome {
@@ -31,8 +32,23 @@
   padding-bottom: 159px;
 }
 
+/************* Tablette *******************/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .messages .errorCode {
+    font-size: 110px;
+  }
+  .messages .errorText {
+    margin: 0;
+    font-size: 1.5rem;
+    width: 75%;
+    padding-bottom: 133px;
+  }
+  .backHome {
+    padding-bottom: 109px;
+  }
+}
 /************* Mobile *******************/
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .messages .errorCode {
     font-size: 96px;
   }

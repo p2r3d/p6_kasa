@@ -11,9 +11,9 @@ function Collapse({itemTitle,itemText, fontSize}) {
     <ul>       
       <li style={{ fontSize: (parseInt(fontSize)) }}>
         <div className='openedCollapse' >
-          <div className='itemTitle'>
+          <div className='itemTitle' onClick={() => setIsOpen(false)}>
             <p className=''>{itemTitle}</p>
-            <button className='arrowBtn' onClick={() => setIsOpen(false)}>
+            <button className='arrowBtn' >
               <img className="arrowImg" src={UArrow} alt="flêche vers le haut" />
             </button>
           </div>
@@ -34,8 +34,8 @@ function Collapse({itemTitle,itemText, fontSize}) {
     <ul>       
       <li  style={{ fontSize: fontSize }}>
         <div className='closedCollapse' >
-          <p className='itemTitle'>{itemTitle}</p>
-          <button className='arrowBtn' onClick={() => setIsOpen(true)}>
+          <p className='itemTitle' onClick={() => setIsOpen(true)}>{itemTitle}</p>
+          <button className='arrowBtn'>
             <img className="arrowImg" src={DArrow} alt="flêche vers le bas" />
           </button>
         </div>      

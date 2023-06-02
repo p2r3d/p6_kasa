@@ -15,6 +15,7 @@
     height: 340px;
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.3s;
     position: relative;
       
     .cardImg {
@@ -32,34 +33,19 @@
       color:$title-color;
     }
   }
-  .cardFigure::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  @include full;
-  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-  }
   .cardFigure:hover {
-    transition: 0.5s;
-    box-shadow: rgb(100, 100, 100) 0 0 20px 1px;
+    transform: scale(1.05);
+    box-shadow: rgb(180, 179, 179) 0 0 20px 1px;
   }
 }
-/************* Mobile *******************/
-@media (max-width: 700px){
+/************* Tablette *******************/
+@media screen and (min-width:769px) and (max-width: 1023px){
  .cardContainer {
-  @extend %flex-center;
-  gap :3rem ;
-  flex-wrap: wrap;
-  margin: 3rem;
+   margin: 10px 0 ; 
   .cardFigure {
-    height: 340px;
-    border-radius: 10px;
-    overflow: hidden;
-    .cardImg {
-      width:100%;     
-      object-fit: cover;
-    }
+      width: 100%;
+      height: auto;
+    
     .cardTitle {
       position: absolute;
       bottom: 5px;
@@ -68,6 +54,29 @@
       height: 52px;
       padding-left: 1rem;
       color:$title-color;
+      font-size: 24px;
+    }
+  }
+ }
+}
+/************* Mobile *******************/
+@media screen and (max-width: 768px){
+ .cardContainer {
+  @extend %flex-center;
+   margin: 40px 0 ; 
+  .cardFigure {
+      width: 100%;
+      height: auto;
+    
+    .cardTitle {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 90%;
+      height: 52px;
+      padding-left: 1rem;
+      color:$title-color;
+      font-size: 24px;
     }
   }
  }

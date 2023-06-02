@@ -45,10 +45,10 @@ const fontSize = "18px";
       </div>
       <div className="equipCollapseDiv">
         <Collapse 
-          fontSize={fontSize}
           key={selHousing.id}
           itemTitle={datas.housingEquipmentsCollapseTitle}
           itemText={selHousing.equipments}
+          fontSize={fontSize}
         />
       </div>   
     </div>

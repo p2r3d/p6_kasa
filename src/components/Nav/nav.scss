@@ -4,6 +4,7 @@
 .nav {
   @extend %flex-center-between;
   flex-wrap: wrap;
+  align-items: center;
   padding-bottom : 25px;
   .logoDiv {
     display: flex;

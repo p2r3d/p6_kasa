@@ -13,7 +13,7 @@
 }
 .carrouselSection .PArrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 2%;
   width: 46px;
   height: 79px;
@@ -29,7 +29,7 @@
   width: 46px;
   height: 79px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 2%;
 }
 .carrouselSection .slider {
@@ -51,6 +51,7 @@
   .carrouselSection .PArrow, .carrouselSection .NArrow {
     width: 15px;
     height: 20px;
+    top: 50%;
   }
   .NArrowNone, .slider {
     display: none;

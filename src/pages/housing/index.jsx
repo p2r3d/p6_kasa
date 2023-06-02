@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 
 import Slider from '../../components/Slider'
 import Nav from '../../components/Nav'
@@ -16,22 +16,25 @@ function Housing() {
   const {id}=useParams();
    // récup du logement associé cet id
   const selectedHousing = housings.find((housing) => housing.id === id);
-  
-  return (
-    <div>
-      <Nav        
-        logo={datas.logoKasa} 
-        logoDescription={datas.logoDescription}
-      />      
-      <Slider selHousing={selectedHousing}/>
-      <HousingInfos selHousing={selectedHousing}/>
-      <Footer 
-        logo={datas.logoFooterKasa} 
-        logoDescription={datas.logoDescription}
-        text={datas.footerText}
-      />
-    </div>
-  );
+
+  if (selectedHousing) {
+    return (
+      <div>
+        <Nav        
+          logo={datas.logoKasa} 
+          logoDescription={datas.logoDescription}
+        />      
+        <Slider selHousing={selectedHousing}/>
+        <HousingInfos selHousing={selectedHousing}/>
+        <Footer 
+          logo={datas.logoFooterKasa} 
+          logoDescription={datas.logoDescription}
+          text={datas.footerText}
+        />
+      </div>
+    );
+  }
+  return <Navigate to="/notFound" />;
 }
 
 export default Housing
