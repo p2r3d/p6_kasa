@@ -1,30 +1,33 @@
-.housingSection .up {
+.housingSection {
+  padding-top: 30px;
+}
+.housingSection .generalInfosDiv {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin: 24px 0;
   color: #FF6060;
 }
-.housingSection .up .left {
+.housingSection .generalInfosDiv .locationDiv {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  justify-content: space-between;
+  width: 75%;
 }
-.housingSection .up .left .titlesDiv .title {
+.housingSection .generalInfosDiv .locationDiv .titlesDiv .title {
   font-size: 2rem;
   margin: 0;
 }
-.housingSection .up .left .titlesDiv .description {
+.housingSection .generalInfosDiv .locationDiv .titlesDiv .description {
   font-size: 1rem;
   margin: 0;
 }
-.housingSection .up .left .tagsDiv {
+.housingSection .generalInfosDiv .locationDiv .tagsDiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 20px;
 }
-.housingSection .up .left .tagsDiv .tagBtn {
+.housingSection .generalInfosDiv .locationDiv .tagsDiv .tagBtn {
   background-color: #FF6060;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
@@ -35,26 +38,26 @@
   border: 0;
   padding: 0 10px;
 }
-.housingSection .up .right {
+.housingSection .generalInfosDiv .hostRatingDiv {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 37px;
+  justify-content: space-between;
 }
-.housingSection .up .right .housingHostDiv {
+.housingSection .generalInfosDiv .hostRatingDiv .housingHostDiv {
   display: flex;
   gap: 10px;
 }
-.housingSection .up .right .housingHostDiv img {
+.housingSection .generalInfosDiv .hostRatingDiv .housingHostDiv img {
   border-radius: 50%;
   width: 64px;
   height: 64px;
 }
-.housingSection .up .right .housingHostDiv p {
+.housingSection .generalInfosDiv .hostRatingDiv .housingHostDiv p {
   width: 84px;
   text-align: right;
 }
-.housingSection .up .right .housingHostDiv .ratingDiv {
+.housingSection .generalInfosDiv .hostRatingDiv .housingHostDiv .ratingDiv {
   height: 1rem;
 }
 .housingSection .collapsesDiv {
@@ -75,49 +78,59 @@ ul {
   padding: 0;
 }
 
+/********** Tablette **********/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .housingSection .collapsesDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .housingSection .hostRatingDiv .ratingDiv {
+    height: 16px;
+    justify-content: right;
+  }
+  .housingSection .hostRatingDiv .housingHostDiv {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .housingSection .hostRatingDiv .housingHostDiv img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  .housingSection .hostRatingDiv .housingHostDiv p {
+    width: 24px;
+    text-align: right;
+    font-size: 16px;
+  }
+}
 /************* Mobile *******************/
-@media (max-width: 700px) {
-  .housingSection .up {
+@media screen and (max-width: 768px) {
+  .housingSection {
+    padding-top: 15px;
+  }
+  .housingSection .generalInfosDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 24px;
-    color: #FF6060;
   }
-  .housingSection .up .left {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding-bottom: 17px;
+  .housingSection .generalInfosDiv .locationDiv {
+    width: 100%;
   }
-  .housingSection .up .left .titlesDiv .title {
+  .housingSection .generalInfosDiv .locationDiv .titlesDiv .title {
     font-size: 1rem;
     margin: 0;
   }
-  .housingSection .up .left .titlesDiv .description {
+  .housingSection .generalInfosDiv .locationDiv .titlesDiv .description {
     font-size: 14px;
     margin: 0;
   }
-  .housingSection .up .left .tagsDiv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+  .housingSection .generalInfosDiv .locationDiv .tagsDiv {
     padding-top: 12px;
   }
-  .housingSection .up .left .tagsDiv .tagBtn {
-    background-color: #FF6060;
-    font-family: "Montserrat", sans-serif;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 10px;
-    min-width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    border: 0;
-    padding: 0 10px;
-  }
-  .housingSection .up .right {
+  .housingSection .generalInfosDiv .hostRatingDiv {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -125,24 +138,12 @@ ul {
     gap: 20px;
     padding-bottom: 0px;
   }
-  .housingSection .up .right .ratingDiv {
+  .housingSection .generalInfosDiv .hostRatingDiv .ratingDiv {
     height: 13px;
-    justify-content: left;
-  }
-  .housingSection .up .right .housingHostDiv {
-    display: flex;
-    gap: 10px;
     justify-content: right;
-    align-items: center;
   }
-  .housingSection .up .right .housingHostDiv img {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-  }
-  .housingSection .up .right .housingHostDiv p {
+  .housingSection .generalInfosDiv .hostRatingDiv .housingHostDiv p {
     width: 54px;
-    text-align: right;
     font-size: 13px;
   }
   .housingSection .collapsesDiv {

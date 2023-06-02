@@ -24,7 +24,6 @@
     border-radius: 25px;
     object-fit: cover;
     mix-blend-mode: darken;
-
   }
 }
 
@@ -50,6 +49,9 @@
     height: 111px;
     .bannerTitle {
       font-size: 24px;
+    }
+    img {
+      border-radius: 10px;
     }
   } 
 }

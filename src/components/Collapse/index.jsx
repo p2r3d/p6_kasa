@@ -10,8 +10,8 @@ function Collapse({itemTitle,itemText, fontSize}) {
   <section className='collapseSection'>
     <ul>       
       <li style={{ fontSize: (parseInt(fontSize)) }}>
-        <div className='openedCollapse' >
-          <div className='itemTitle' onClick={() => setIsOpen(false)}>
+        <div className='openedCollapse'  onClick={() => setIsOpen(false)}>
+          <div className='itemTitle'>
             <p className=''>{itemTitle}</p>
             <button className='arrowBtn' >
               <img className="arrowImg" src={UArrow} alt="flêche vers le haut" />
@@ -33,8 +33,8 @@ function Collapse({itemTitle,itemText, fontSize}) {
   <section className='collapseSection'>
     <ul>       
       <li  style={{ fontSize: fontSize }}>
-        <div className='closedCollapse' >
-          <p className='itemTitle' onClick={() => setIsOpen(true)}>{itemTitle}</p>
+        <div className='closedCollapse'  onClick={() => setIsOpen(true)}>
+          <p className='itemTitle'>{itemTitle}</p>
           <button className='arrowBtn'>
             <img className="arrowImg" src={DArrow} alt="flêche vers le bas" />
           </button>

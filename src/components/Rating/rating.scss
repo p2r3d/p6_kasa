@@ -2,13 +2,25 @@
   display: flex;
   justify-content: space-around;
   gap : 15px;
-  height : 24px;
+  img {
+    height:24px;
+  }
+}
+/********** Tablette **********/
+@media screen and (min-width:769px) and (max-width: 1023px) {
+  .ratingDiv {
+    gap : 6px;
+    img {
+      height:20px;
+    }
+  } 
 }
 /************* Mobile *******************/
-@media (max-width: 700px){
-.ratingDiv {
-  gap : 6px;
-  height : 13px;
-  justify-content: left;
+@media screen and (max-width: 768px) {
+  .ratingDiv {
+    gap : 3px;
+    img {
+      height:13px;
+    }
   }
 }

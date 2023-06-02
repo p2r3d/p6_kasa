@@ -9,18 +9,16 @@
 /************* Tablette *******************/
 @media screen and (min-width:769px) and (max-width: 1023px){
   .gallery {
-    background-color: #ffffff;
+    background: #ffffff;
     display: flex;
     justify-content: center;
-
   }
 }
-/************* Tablette *******************/
+/************* Mobile *******************/
 @media screen and (max-width: 768px){
   .gallery {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-
   }
 }

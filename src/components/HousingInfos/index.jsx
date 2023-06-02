@@ -7,8 +7,8 @@ function HousingInfos({selHousing}) {
 const fontSize = "18px";
   return (
   <section className="housingSection">
-    <div className="up">
-      <div className="left">
+    <div className="generalInfosDiv">
+      <div className="locationDiv">
         <div className="titlesDiv">
           <p className="title">{selHousing.title}</p>
           <p className="description">{selHousing.location}</p>
@@ -21,7 +21,7 @@ const fontSize = "18px";
           </div>     
         </div> 
       </div>
-      <div className="right">
+      <div className="hostRatingDiv">
         <div className="housingHostDiv">
           <p>{selHousing.host.name}</p>
           <img src={selHousing.host.picture}
@@ -33,7 +33,7 @@ const fontSize = "18px";
           selHousing={selHousing} />
         </div>
       </div>     
-     </div> 
+    </div> 
     <div className="collapsesDiv">
       <div className="descriptionCollapseDiv">
         <Collapse

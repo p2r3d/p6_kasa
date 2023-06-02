@@ -1,15 +1,18 @@
 @import '../../style/placeholders';
 @import '../../style/variables';
 .housingSection {
-  .up {
+  padding-top:30px;
+  .generalInfosDiv {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin: 24px 0;
     color : $kasa-color;
-    .left {
+    .locationDiv {
       display : flex;
       flex-direction: column;
-      gap : 2px;
+      justify-content:space-between;
+      width:75%;
+
       .titlesDiv {
         .title {
           font-size: 2rem;
@@ -25,7 +28,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap : 10px;
-        padding-top: 20px;
         .tagBtn {
           background-color:$kasa-color ;
           font-family: $font-family;
@@ -39,15 +41,14 @@
         }
       }  
     } 
-    .right {
+    .hostRatingDiv {
       display: flex;
       flex-direction: column;
       gap:20px;
-      padding-bottom: 37px;
-    .housingHostDiv {
+      justify-content:space-between;
+      .housingHostDiv {
         display: flex;
-        gap : 10px;
-        
+        gap : 10px;       
         img {
           border-radius: 50%;
           width : 64px;
@@ -60,8 +61,7 @@
         .ratingDiv {
         height : 1rem;
       }
-    }
-      
+    }  
     }
   }  
   .collapsesDiv {
@@ -81,22 +81,49 @@
 ul {
   padding: 0;
 }
+/********** Tablette **********/
+@media screen and (min-width:769px) and (max-width: 1023px) {
+ .housingSection {
+  .collapsesDiv {
+    display: flex;
+    flex-direction: column;    
+    gap:0px;
+  }
+  .hostRatingDiv {
+      .ratingDiv {
+        height : 16px;
+        justify-content: right ;
+      } 
+      .housingHostDiv {
+        display: flex;
+        justify-content: right ;
+        align-items: center;
+        img {
+          border-radius: 50%;
+          width : 32px;
+          height: 32px;
+        }
+        p {
+          width : 24px;
+          text-align: right;
+          font-size: 16px;
+        }  
+      }   
+    }
+}
+}
 /************* Mobile *******************/
-@media (max-width: 700px) {
+@media screen and (max-width: 768px) {
 .housingSection {
-  .up {
+    padding-top:15px;
+
+  .generalInfosDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 24px;
-    color : $kasa-color;
-
-    .left {
-      display : flex;
-      flex-direction: column;         
-      gap : 2px;
-      padding-bottom: 17px;
-
+    .locationDiv {
+      width:100%;
       .titlesDiv {
         .title {
           font-size: 1rem;
@@ -108,26 +135,10 @@ ul {
         }
       }
       .tagsDiv {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap : 10px;
         padding-top: 12px;
-        .tagBtn {
-          background-color:$kasa-color ;
-          font-family: $font-family;
-          color : $title-color;
-          font-weight : $font-weight;
-          font-size: 10px;
-          min-width : 115px;
-          height : 25px;
-          border-radius: 10px;
-          border:0;
-          padding : 0 10px;
-        }
       }  
     } 
-    .right {
+    .hostRatingDiv {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -136,21 +147,11 @@ ul {
       padding-bottom: 0px;  
       .ratingDiv {
         height : 13px;
-        justify-content: left ;
+        justify-content: right ;
       } 
       .housingHostDiv {
-        display: flex;
-        gap : 10px;
-        justify-content: right ;
-        align-items: center;
-        img {
-          border-radius: 50%;
-          width : 32px;
-          height: 32px;
-        }
         p {
           width : 54px;
-          text-align: right;
           font-size: 13px;
         }  
       }   

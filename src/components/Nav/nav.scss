@@ -5,21 +5,16 @@
   @extend %flex-center-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom : 25px;
-  .logoDiv {
-    display: flex;
-    font-size: 62px;   
-    .logo {
-      height: 60px;
-    }
+  .img {
+    height :62px;
   }
   .navbar {
     display:flex;
     flex-wrap: wrap;
-    gap: 3.1rem;
+    gap: 4rem;
     .navLi {   
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       color : $kasa-color;
       font-weight: $font-weight;
     }
@@ -28,9 +23,8 @@
     }
   } 
 }
-
 .navHome {
-  padding-bottom : 68px;
+  margin-bottom : 68px;
 }
 .navAbout {
   padding-bottom : 50px;
@@ -40,16 +34,13 @@
 @media screen and (min-width:769px) and (max-width: 1023px) {
   .nav {
     align-items: center;
-    .logoDiv { 
-      .logo {
-        height: 45px;
-      }
+    img {
+      height:53px;
     }
     .navbar {
-      gap: 15px;
+      gap: 55px;
       .navLi {   
-        font-size: 12px;
-        text-transform: uppercase;
+        font-size: 20px;
       }
       .underlinedLink {
         text-decoration-line: underline;
@@ -61,14 +52,12 @@
   }
 }
   
-  /************* Mobile *******************/
-@media (max-width: 768px) {
+/************* Mobile *******************/
+@media screen and (max-width: 768px) {
   .nav {
     align-items: center;
-    .logoDiv { 
-      .logo {
-        height: 45px;
-      }
+    img {
+      height:43px;
     }
     .navbar {
       gap: 15px;
@@ -83,6 +72,7 @@
   }
   .navHome, .navAbout {
     padding-bottom : 16px;
+    margin:4px;
   }
 }
 

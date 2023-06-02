@@ -1,5 +1,10 @@
 .carrouselSection {
   height: 415px;
+  padding-top: 25px;
+}
+.carrouselSection img {
+  width: 40px;
+  height: 69px;
 }
 .carrouselSection .picturesDiv {
   position: relative;
@@ -15,8 +20,6 @@
   position: absolute;
   top: 40%;
   left: 2%;
-  width: 46px;
-  height: 79px;
 }
 .carrouselSection .PArrow:hover, .carrouselSection .NArrow:hover {
   transform: scale(1.1);
@@ -26,8 +29,6 @@
   display: none;
 }
 .carrouselSection .NArrow {
-  width: 46px;
-  height: 79px;
   position: absolute;
   top: 40%;
   right: 2%;
@@ -40,7 +41,7 @@
 }
 
 /************* Mobile *******************/
-@media (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .carrouselSection {
     height: 255px;
   }
@@ -49,11 +50,11 @@
     border-radius: 10px;
   }
   .carrouselSection .PArrow, .carrouselSection .NArrow {
-    width: 15px;
-    height: 20px;
+    width: 11px;
+    height: 19px;
     top: 50%;
   }
   .NArrowNone, .slider {
     display: none;
   }
-}/*# sourceMappingURL=slider.css.map */
+}/*# sourceMappingURL=slideshow.css.map */

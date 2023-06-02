@@ -1,7 +1,11 @@
 @import '../../style/variables';
 .carrouselSection {
     height: 415px;   
-   
+   padding-top: 25px;
+   img {
+      width:40px;
+      height:69px;
+    }
     .picturesDiv {
       position : relative;
     }
@@ -15,8 +19,6 @@
       position: absolute;
       top: 40%;
       left: 2%;
-      width : 46px;
-      height : 79px;
     }
     .PArrow:hover, .NArrow:hover{
       transform: scale(1.1);
@@ -26,11 +28,9 @@
       display: none;
     }
     .NArrow {
-    width : 46px;
-    height : 79px;
-    position: absolute;
-    top: 40%;
-    right: 2%;
+      position: absolute;
+      top: 40%;
+      right: 2%;
     }
    .slider {
       position: absolute;
@@ -40,7 +40,7 @@
     }
   }
 /************* Mobile *******************/
-@media (max-width: 700px){
+@media screen and (max-width: 768px) {
 .carrouselSection {
   height: 255px;   
   .carrouselImg {
@@ -48,8 +48,8 @@
     border-radius: 10px;
   }
   .PArrow, .NArrow {
-    width : 15px;
-    height : 20px;
+    width : 11px;
+    height : 19px;
     top: 50%;
   }
 }

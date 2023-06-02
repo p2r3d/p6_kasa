@@ -53,4 +53,7 @@
   .homeBanner .bannerTitle {
     font-size: 24px;
   }
+  .homeBanner img {
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=banner.css.map */

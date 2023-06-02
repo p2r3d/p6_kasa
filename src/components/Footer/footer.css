@@ -14,10 +14,15 @@
   font-size: 24px;
 }
 
-/************* Mobile *******************/
-@media (max-width: 700px) {
+/************* Tablette *******************/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .footer .footerImg, .footer .footerTitle {
-    color: #FFFFFF;
+    font-size: 18px;
+  }
+}
+/************* Mobile *******************/
+@media screen and (max-width: 768px) {
+  .footer .footerImg, .footer .footerTitle {
     font-size: 12px;
   }
 }/*# sourceMappingURL=footer.css.map */

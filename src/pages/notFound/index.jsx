@@ -12,11 +12,11 @@ function NotFound() {
         logo={datas.logoKasa} 
         logoDescription={datas.logoDescription}
       />
-      <div className='messages'>
+      <div className='messagesDiv'>
         <h1 className='errorCode'>{datas.notFoundCode}</h1>
         <p className='errorText'>{datas.notFoundText}</p>
       </div>
-      <Link className='backHome' to="/">{datas.backHomeLink}</Link>
+      <Link className='backHomeDiv' to="/">{datas.backHomeLink}</Link>
       <Footer 
         logo={datas.logoFooterKasa} 
         logoDescription={datas.logoDescription}

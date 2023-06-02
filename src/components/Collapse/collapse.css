@@ -13,15 +13,19 @@
   background-color: #FF6060;
   border-radius: 5px;
   width: 100%;
+  max-height: 50px;
 }
 .collapseSection .openedCollapse {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 3s ease-out;
   border-radius: 5px;
   background-color: #FF6060;
   padding: 0;
   width: 100%;
 }
 .collapseSection .openedCollapse .itemText {
-  padding: 30px 18px 19px 18px;
+  padding: 18px;
   margin: 0;
   background-color: #F6F6F6;
   color: #FF6060;
@@ -63,7 +67,7 @@
     width: 100%;
   }
   .collapseSection .openedCollapse .itemText {
-    padding: 20px 18px 19px 18px;
+    padding: 16px;
     margin: 0;
     background-color: #F6F6F6;
     color: #FF6060;

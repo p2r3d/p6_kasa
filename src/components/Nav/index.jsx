@@ -17,7 +17,9 @@ function Nav({logo, logoDescription}) {
   return (
     <div className={`nav ${activeLink === '/' && 'navHome'} ${activeLink === '/about' && 'navAbout'} ${activeLink.startsWith('/logement/') && 'navHousing'}`}>
       <div className='logoDiv'>
-        <img className='logo' src={logo} alt={logoDescription}/>
+        <Link to='/' className='logo' >
+          <img src={logo} alt={logoDescription}/>
+        </Link>
       </div>
       <nav className='navbar'>
         {/* le lien actif est souligné */} 
@@ -27,5 +29,4 @@ function Nav({logo, logoDescription}) {
     </div>
   )
 }
-
 export default Nav

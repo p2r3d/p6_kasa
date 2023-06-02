@@ -7,23 +7,18 @@
 .nav {
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 25px;
 }
-.nav .logoDiv {
-  display: flex;
-  font-size: 62px;
-}
-.nav .logoDiv .logo {
-  height: 60px;
+.nav .img {
+  height: 62px;
 }
 .nav .navbar {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.1rem;
+  gap: 4rem;
 }
 .nav .navbar .navLi {
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: #FF6060;
   font-weight: 500;
 }
@@ -32,7 +27,7 @@
 }
 
 .navHome {
-  padding-bottom: 68px;
+  margin-bottom: 68px;
 }
 
 .navAbout {
@@ -44,15 +39,14 @@
   .nav {
     align-items: center;
   }
-  .nav .logoDiv .logo {
-    height: 45px;
+  .nav img {
+    height: 53px;
   }
   .nav .navbar {
-    gap: 15px;
+    gap: 55px;
   }
   .nav .navbar .navLi {
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 20px;
   }
   .nav .navbar .underlinedLink {
     text-decoration-line: underline;
@@ -62,12 +56,12 @@
   }
 }
 /************* Mobile *******************/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav {
     align-items: center;
   }
-  .nav .logoDiv .logo {
-    height: 45px;
+  .nav img {
+    height: 43px;
   }
   .nav .navbar {
     gap: 15px;
@@ -81,5 +75,6 @@
   }
   .navHome, .navAbout {
     padding-bottom: 16px;
+    margin: 4px;
   }
 }/*# sourceMappingURL=nav.css.map */

@@ -3,7 +3,6 @@
 
 .collapseSection {
   margin-bottom: 31px;
-
   .closedCollapse {
     @extend %flex-center-between;
     justify-content: space-between;
@@ -11,14 +10,21 @@
     background-color: $kasa-color;
     border-radius: $border-radius; 
     width: 100%;
+    // hauteur max pour l'effet de transition
+    max-height: 50px; 
   }
   .openedCollapse {
+  // effet de transition
+  max-height:1000px; 
+  overflow: hidden;
+  transition: max-height 3s ease-out;
+
   border-radius: 5px;
   background-color: $kasa-color; 
   padding: 0;  width: 100%;
 
   .itemText {
-    padding: 30px 18px 19px 18px;
+    padding: 18px;
     margin:0;
     background-color: $background-text-color;
     color:$kasa-color;
@@ -66,7 +72,7 @@
       width: 100%;
 
       .itemText {
-        padding: 20px 18px 19px 18px;
+        padding: 16px;
         margin:0;
         background-color: $background-text-color;
         color:$kasa-color;

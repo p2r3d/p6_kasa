@@ -39,27 +39,13 @@
   }
 }
 /************* Tablette *******************/
-@media screen and (min-width:769px) and (max-width: 1023px){
- .cardContainer {
-   margin: 10px 0 ; 
-  .cardFigure {
-      width: 100%;
-      height: auto;  
-    .cardTitle {
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      width: 90%;
-      height: 52px;
-      padding-left: 1rem;
-      color:$title-color;
-      font-size: 24px;
-    }
+@media screen and (min-width:789px) and (max-width: 1023px){
+  .cardContainer {
+    margin:0;
   }
- }
 }
 /************* Mobile *******************/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 788px){
  .cardContainer {
   @extend %flex-center;
    margin: 40px 0 ; 
@@ -75,7 +61,7 @@
       height: 52px;
       padding-left: 1rem;
       color:$title-color;
-      font-size: 24px;
+      font-size: 18px;
     }
   }
  }
