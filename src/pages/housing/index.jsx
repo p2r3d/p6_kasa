@@ -1,6 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 
-import Slider from '../../components/Slider'
+import Slideshow from '../../components/Slideshow'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import HousingInfos from '../../components/HousingInfos'
@@ -24,7 +24,7 @@ function Housing() {
           logo={datas.logoKasa} 
           logoDescription={datas.logoDescription}
         />      
-        <Slider selHousing={selectedHousing}/>
+        <Slideshow selHousing={selectedHousing}/>
         <HousingInfos selHousing={selectedHousing}/>
         <Footer 
           logo={datas.logoFooterKasa} 

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 //import { useParams } from 'react-router-dom'
-import './slider.scss';
+import './slideshow.scss';
 import PArrow from "../../assets/PArrow.png";
 import NArrow from "../../assets/NArrow.png";
 
-const Slider = ({selHousing}) => {
+const Slideshow = ({selHousing}) => {
 const [index, setCurrentIndex] = useState(0);
 
 const previousPicture = () => {
@@ -50,4 +50,4 @@ return (
   )
 };
 
-export default Slider;
+export default Slideshow;
