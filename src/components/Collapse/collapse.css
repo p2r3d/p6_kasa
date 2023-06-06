@@ -18,7 +18,7 @@
 .collapseSection .openedCollapse {
   max-height: 1000px;
   overflow: hidden;
-  transition: max-height 3s ease-out;
+  transition: max-height 5s ease-out;
   border-radius: 5px;
   background-color: #FF6060;
   padding: 0;

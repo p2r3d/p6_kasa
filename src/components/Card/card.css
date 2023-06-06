@@ -8,10 +8,10 @@
   gap: 3rem;
   flex-wrap: wrap;
   margin: 3rem;
+  /* effet de survol sur une carte*/
 }
 .cardContainer .cardFigure {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   width: 340px;
   height: 340px;
@@ -19,12 +19,14 @@
   overflow: hidden;
   transition: transform 0.3s;
   position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
 }
 .cardContainer .cardFigure .cardImg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  mix-blend-mode: darken;
 }
 .cardContainer .cardFigure .cardTitle {
   position: absolute;
@@ -54,15 +56,5 @@
   .cardContainer .cardFigure {
     width: 100%;
     height: auto;
-  }
-  .cardContainer .cardFigure .cardTitle {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    width: 90%;
-    height: 52px;
-    padding-left: 1rem;
-    color: #FFFFFF;
-    font-size: 18px;
   }
 }/*# sourceMappingURL=card.css.map */

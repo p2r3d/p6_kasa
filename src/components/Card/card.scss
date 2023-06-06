@@ -7,9 +7,9 @@
   gap :3rem ;
   flex-wrap: wrap;
   margin: 3rem;
+
   .cardFigure {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 340px;
     height: 340px;
@@ -17,10 +17,11 @@
     overflow: hidden;
     transition: transform 0.3s;
     position: relative;
-      
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
     .cardImg {
       @include full;
       object-fit: cover;
+      mix-blend-mode: darken;
     }
 
     .cardTitle {
@@ -33,36 +34,26 @@
       color:$title-color;
     }
   }
+  /* effet de survol sur une carte*/
   .cardFigure:hover {
     transform: scale(1.05);
     box-shadow: rgb(180, 179, 179) 0 0 20px 1px;
   }
 }
 /************* Tablette *******************/
-@media screen and (min-width:789px) and (max-width: 1023px){
+@media screen and (min-width:769px) and (max-width: 1023px){
   .cardContainer {
     margin:0;
   }
 }
 /************* Mobile *******************/
-@media screen and (max-width: 788px){
+@media screen and (max-width: 768px){
  .cardContainer {
   @extend %flex-center;
    margin: 40px 0 ; 
   .cardFigure {
       width: 100%;
       height: auto;
-    
-    .cardTitle {
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      width: 90%;
-      height: 52px;
-      padding-left: 1rem;
-      color:$title-color;
-      font-size: 18px;
-    }
   }
  }
 }

@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
-
-import datas from '../../datas/config'
+import datas from '../../datas/configKasa'
 import './notFound.scss'
 
 function NotFound() {

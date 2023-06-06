@@ -1,11 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/about';
-import Housing from './pages/housing';
-import NotFound from './pages/notFound';
+import About from './pages/About';
+import Housing from './pages/Housing';
+import NotFound from './pages/NotFound';
  
-
 function Router() {
   return (
     <div>

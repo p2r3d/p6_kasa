@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import PropTypes from "prop-types" //bibliothèque pour valider les types des props 
 import Housings from "../../datas/logements.json";
-
 function Card() {
   // le hook useState initialise la variable d'état nommée housingState 
   // avec la valeur de Housings provenant de logements.json
@@ -22,9 +21,7 @@ function Card() {
               alt="Logement en images"
             />
             <div className="cardTitle">
-              <strong>
-                {housing.title}
-              </strong>
+              {housing.title}
             </div>
           </div>
         </Link>
@@ -32,14 +29,13 @@ function Card() {
     </div>
   )
 }
-
 Card.propTypes = {
-  key: PropTypes.string,
   title: PropTypes.string,
   cover: PropTypes.string,
 }
 Card.defaultProps = {
   title: '',
 }
-
 export default Card;
+
+

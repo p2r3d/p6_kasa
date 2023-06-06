@@ -4,7 +4,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import HousingInfos from '../../components/HousingInfos'
 import housings from '../../datas/logements.json';
-import datas from '../../datas/config'
+import datas from '../../datas/configKasa'
 
 function Housing() {
   // récup de l'id passé en paramètre dans l'url

@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
-import datas from '../../datas/config';
+import datas from '../../datas/configKasa';
 import  './about.scss';
 
 

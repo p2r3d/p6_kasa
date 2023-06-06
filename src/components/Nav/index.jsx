@@ -9,8 +9,8 @@ function Nav({logo, logoDescription}) {
   // gestion de l'état du lien actif
   const [activeLink, setActiveLink] = useState('');
 
-/* qd la page change, useEffect est exécuté et met à jour l'état du lien actif 
-    (La dépendance [location] spécifie que le useEffect doit être déclenché chaque fois que la valeur de location change)*/ 
+  /* qd la page change, useEffect est exécuté et met à jour l'état du lien actif 
+  (La dépendance [location] spécifie que le useEffect doit être déclenché chaque fois que la valeur de location change)*/ 
  
   useEffect(() => { setActiveLink(location.pathname); }, [location]);
 

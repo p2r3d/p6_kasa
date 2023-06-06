@@ -5,7 +5,6 @@
   margin-bottom: 31px;
   .closedCollapse {
     @extend %flex-center-between;
-    justify-content: space-between;
     color: $title-color;
     background-color: $kasa-color;
     border-radius: $border-radius; 
@@ -14,22 +13,21 @@
     max-height: 50px; 
   }
   .openedCollapse {
-  // effet de transition
-  max-height:1000px; 
-  overflow: hidden;
-  transition: max-height 3s ease-out;
-
-  border-radius: 5px;
-  background-color: $kasa-color; 
-  padding: 0;  width: 100%;
-
-  .itemText {
-    padding: 18px;
-    margin:0;
-    background-color: $background-text-color;
-    color:$kasa-color;
-    font-weight: 400;
-    }
+    // effet de transition
+    max-height:1000px; 
+    overflow: hidden;
+    transition: max-height 2s ease;
+    border-radius: 5px;
+    background-color: $kasa-color; 
+    padding: 0;  
+    width: 100%;
+    .itemText {
+      padding: 18px;
+      margin:0;
+      background-color: $background-text-color;
+      color:$kasa-color;
+      font-weight: 400;
+      }
   }
   .itemTitle {
     @extend %flex-center-between;
@@ -37,63 +35,61 @@
     padding-left: 18px;
     width:100%; 
     margin: 0;
-    color: $title-color;
-  }
-  .arrowBtn {
-    border-radius:$border-radius;
-    border:0px;
-    padding-right: 10px;
-    background-color: $kasa-color;
-  }
-    
-  ul {
-    padding:0;
-    margin: 0;
-    li {
-      list-style-type: none;  
+    color: $title-color; 
+    .arrowBtn {
+      border-radius:$border-radius;
+      border:0px;
+      padding-right: 10px;
+      background-color: $kasa-color; 
+      transition-property: transform;
+      transition-duration: 400ms;
+      &:active {
+        transform: rotate(180deg) ;
+        text-align: center;
+      }
     }
-
+    .arrowImg {
+    width:24px;
+    height:13px;
+    }
+    .arrowRotationDown {
+    transform: rotate(0deg) ;
+    } 
+   .arrowRotationUp {
+    transform: rotate(180deg) ;
+   } 
   }
+  li {
+      list-style-type: none;  
+  }
+}
+/************* Tablette *******************/
+@media screen and (min-width:769px) and (max-width: 1023px) {
+  .itemTitle {
+    font-size: 16px;
+  }
+  .arrowImg {
+    width:16px;
+    height:13x;
+  }
+ .itemText {
+    font-size: 16px;
+  } 
 }
 /************* Mobile *******************/
 @media screen and (max-width: 768px) {
   .collapseSection {
     .closedCollapse {
-      @extend %flex-center-between;
-      color: $title-color;
-      background-color: $kasa-color;
-      border-radius: $border-radius; 
       width: 100%;
     }
     .openedCollapse {
-      border-radius: 5px;
-      background-color: $kasa-color; 
-      padding: 0;  
       width: 100%;
-
       .itemText {
-        padding: 16px;
-        margin:0;
-        background-color: $background-text-color;
-        color:$kasa-color;
-        font-weight: 400;
         font-size: 13px;
       }
     }
     .itemTitle {
-      @extend %flex-center-between;
-      height :30px;
-      padding-left: 18px;
-      width:100%;
-      margin: 0;
-      color: $title-color;
       font-size: 13px;
-    }
-    .arrowBtn {
-      border-radius:$border-radius;
-      border:0px;
-      padding-right: 10px;
-      background-color: $kasa-color;
     }
     .arrowImg {
       width:13px;

@@ -1,3 +1,49 @@
+   /* transition: transform 3s ease; */
+
+ 
+hover
+ 
+15
+ 
+arrowImg
+ 
+arrowImg
+ 
+ers le haut
+ 
+normal
+ 
+arrousel
+ 
+arrouse
+ 
+N
+ 
+(255, 255, 255, 0)
+ 
+rgba(0, 0, 0, 0.5)
+ 
+0px
+ 
+top
+ 
+bottom
+ 
+ffffff
+ 
+color
+ 
+8px
+ 
+rem
+ 
+      color: $title-color;
+      font-weight: $font-weight;
+      position: absolute;
+      z-index: 1;
+ 
+.aboutBanner
+ 
  .banner {
  
 /************* Mobile *******************/

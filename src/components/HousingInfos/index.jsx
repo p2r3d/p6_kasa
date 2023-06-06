@@ -1,7 +1,7 @@
 import "./housingInfos.scss";
 import Rating from '../../components/Rating'
 import Collapse from '../../components/Collapse'
-import datas from '../../datas/config.js'
+import datas from '../../datas/configKasa.js'
 
 function HousingInfos({selHousing}) {
 const fontSize = "18px";

@@ -2,7 +2,7 @@ import Header from '../../components/Header'
 import Gallery from '../../components/Gallery'
 import Footer from '../../components/Footer'
 
-import datas from '../../datas/config';
+import datas from '../../datas/configKasa';
 
 function Home() {
   return (
