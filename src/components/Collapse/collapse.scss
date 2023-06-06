@@ -2,8 +2,6 @@
 @import '../../style/placeholders';
 
 .collapseSection {
-  margin-bottom: 31px;
-
   .closedCollapse {
     @extend %flex-center-between;
     align-items:start;
