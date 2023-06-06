@@ -3,8 +3,10 @@
 
 .collapseSection {
   margin-bottom: 31px;
+
   .closedCollapse {
     @extend %flex-center-between;
+    align-items:start;
     color: $title-color;
     background-color: $kasa-color;
     border-radius: $border-radius; 
