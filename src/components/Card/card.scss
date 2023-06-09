@@ -7,23 +7,20 @@
   gap :3rem ;
   flex-wrap: wrap;
   margin: 3rem;
-
   .cardFigure {
     display: flex;
     flex-wrap: wrap;
-    width: 340px;
-    height: 340px;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
     .cardImg {
-      @include full;
+      width: 340px;
+      height: 340px;
       object-fit: cover;
       mix-blend-mode: darken;
     }
-
     .cardTitle {
       position: absolute;
       bottom: 5px;
@@ -54,6 +51,9 @@
   .cardFigure {
       width: 100%;
       height: auto;
+  }
+  .cardFigure:hover {
+    transform:none;
   }
  }
 }

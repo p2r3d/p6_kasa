@@ -7,7 +7,6 @@ function Card() {
   // le hook useState initialise la variable d'état nommée housingState 
   // avec la valeur de Housings provenant de logements.json
   const [ housingState ] = useState(Housings); 
-
   return (
     <div className='cardContainer'>
       {housingState.map((housing) => (
