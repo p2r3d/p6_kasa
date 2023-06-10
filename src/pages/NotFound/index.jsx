@@ -18,7 +18,7 @@ function NotFound() {
       <Link className='backHomeDiv' to="/">{datas.backHomeLink}</Link>
       <Footer 
         logo={datas.logoFooterKasa} 
-        logoDescription={datas.logoDescription}
+        logoDescription={datas.logoFooterDescription}
         text={datas.footerText}
       />
    </div>

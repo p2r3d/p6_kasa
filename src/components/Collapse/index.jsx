@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './collapse.scss'
-import UArrow from '../../assets/UArrow.png';
+import Arrow from '../../assets/Arrow.png';
 
 function Collapse({itemTitle,itemText, fontSize}) {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen)
   return isOpen ? (
   <section className='collapseSection '>
     <ul>       
@@ -13,7 +12,7 @@ function Collapse({itemTitle,itemText, fontSize}) {
           <div className='itemTitle ' >
             <p className=''>{itemTitle}</p>
             <button className='arrowBtn arrowRotationDown'>
-              <img className='arrowImg ' src={UArrow} alt="flêche de la collapse fermée" />
+              <img className='arrowImg ' src={Arrow} alt="flêche de la collapse fermée" />
             </button>
           </div>
           {/* si le texte est un tableau alors affichage de la liste */}
@@ -36,7 +35,7 @@ function Collapse({itemTitle,itemText, fontSize}) {
           <div className='itemTitle'>
             <p> {itemTitle}</p>
             <button className='arrowBtn arrowRotationUp'>
-              <img className='arrowImg ' src={UArrow} alt="flêche de la collapse ouverte" />
+              <img className='arrowImg ' src={Arrow} alt="flêche de la collapse ouverte" />
             </button>
             </div>
         </div>      

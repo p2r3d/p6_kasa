@@ -22,7 +22,7 @@ function Housing() {
         <HousingInfos selHousing={selectedHousing}/>
         <Footer 
           logo={datas.logoFooterKasa} 
-          logoDescription={datas.logoDescription}
+          logoDescription={datas.logoFooterDescription}
           text={datas.footerText}
         />
       </div>

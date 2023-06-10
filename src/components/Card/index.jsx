@@ -18,6 +18,8 @@ function Card() {
               className="cardImg" 
               src={housing.cover} 
               alt="Logement en images"
+              width="340"
+              height="340"
             />
             <div className="cardTitle">
               {housing.title}
@@ -36,5 +38,3 @@ Card.defaultProps = {
   title: '',
 }
 export default Card;
-
-

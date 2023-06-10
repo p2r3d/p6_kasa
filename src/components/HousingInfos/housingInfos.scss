@@ -9,8 +9,9 @@
     .locationDiv {
       display : flex;
       flex-direction: column;
-      justify-content:space-between;
-      width:75%;
+      justify-content:space-around;
+      gap:20px;
+      width:85%;
 
       .titlesDiv {
         .title {
@@ -18,6 +19,7 @@
           margin: 0;
         }
         .description {
+          padding-top: 5px;
           font-size: 1rem;
           margin: 0;
         }
@@ -44,9 +46,9 @@
     .hostRatingDiv {
       display: flex;
       flex-direction: column;
-      gap:20px;
+      gap:10px;
       justify-content:space-between;
-      .housingHostDiv {
+      .housingHostDiv { 
         display: flex;
         align-items: center;
         gap : 10px;       
@@ -93,7 +95,7 @@ ul {
       width:100%;
       .titlesDiv {
         .title {
-          font-size: 1rem;
+          font-size: 1.5rem;
           margin: 0;
         }
         .description {
@@ -141,6 +143,7 @@ ul {
     margin-top: 24px;
     .locationDiv {
       width:100%;
+      gap:0;
       .titlesDiv {
         .title {
           font-size: 1rem;
@@ -160,7 +163,6 @@ ul {
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
-      gap:20px;
       padding-bottom: 0px;  
       .ratingDiv {
         height : 13px;

@@ -10,6 +10,8 @@ function Rating({selHousing}) {
           key={index}
           src={index < selHousing.rating ? RedStar : GreyStar}
           alt="notation avec étoiles"
+          width="25" 
+          height="25" 
         />
       ))}
     </div>   

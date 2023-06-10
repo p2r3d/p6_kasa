@@ -1,7 +1,6 @@
 import Header from '../../components/Header'
 import Gallery from '../../components/Gallery'
 import Footer from '../../components/Footer'
-
 import datas from '../../datas/configKasa';
 
 function Home() {
@@ -17,7 +16,7 @@ function Home() {
       <Gallery />
       <Footer 
         logo={datas.logoFooterKasa} 
-        logoDescription={datas.logoDescription}
+        logoDescription={datas.logoFooterDescription}
         text={datas.footerText}
       />
     </div>

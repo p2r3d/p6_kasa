@@ -12,7 +12,7 @@ function Banner({image, text, description}) {
   useEffect(() => { setActiveLink(location.pathname); }, [location]);
   return (
 	  <div className={`banner ${activeLink === '/' ? 'homeBanner' : ''} ${activeLink === '/about' ? 'aboutBanner' : ''}`}>
-      <img src={image} alt={description} />
+      <img src={image} alt={description} width="211" height="68"/>
       <h2 className="bannerTitle">{text}</h2>
     </div>   
   )
