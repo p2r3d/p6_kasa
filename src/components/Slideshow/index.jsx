@@ -20,7 +20,7 @@ const Slideshow = ({selHousing}) => {
   return (
     <section className="slideshowSection">
       <div className="picturesDiv">
-        {/* affichage flêche précédente */}
+        {/* affichage flêche précédente si plusieurs photos*/}
         <img
           className={selHousing.pictures.length === 1 ? "PArrowNone" : "PArrow"}
           onClick={previousPicture}
@@ -38,7 +38,7 @@ const Slideshow = ({selHousing}) => {
         <div className={selHousing.pictures.length === 1 ? "noSlideshowCounter" :"slideshowCounter"}>
           <span>{index + 1} / {selHousing.pictures.length}</span>
         </div>    
-        {/* affichage flêche suivante */}
+        {/* affichage flêche suivante si plusieurs photos*/}
         <img
           className={selHousing.pictures.length === 1 ? "NArrowNone" : "NArrow"}
           onClick={nextPicture}
